@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+    text-decoration: none;
+}
 body {
   display: flex;
   justify-content: space-between;
@@ -145,9 +147,7 @@ body .contai .form .Submit {
   cursor: pointer;
   
 }
-a.Submit {
-    text-decoration: none;
-}
+
 body .bem {
   
   position: absolute;
