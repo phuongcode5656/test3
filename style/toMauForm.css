@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  font-family: roboto;
+  color: #fff;
+}
+@-webkit-keyframes anim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes anim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body .contai {
+  position: absolute;
+  width: 350px;
+  height: 420px;
+  left: 200px;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+}
+body .contai::before, body .contai::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+  -webkit-animation: anim 4s linear infinite;
+          animation: anim 4s linear infinite;
+}
+body .contai::after {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  background-image: conic-gradient(transparent, transparent, transparent, #ff00d0);
+}
+body .contai .form {
+  position: absolute;
+  inset: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 20px 40px;
+}
+body .contai .form .title {
+  color: #00ccff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0 40px;
+}
+body .contai .form .inpu-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: solid 1px #00ccff;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+body .contai .form .inpu-box input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  color: #00ccff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+body .contai .form .inpu-box .s-title {
+  position: absolute;
+  top: -13px;
+  left: 10px;
+  color: #00ccff;
+  background: #000;
+  padding: 6px;
+  font-size: 12px;
+}
+body .contai .form .chatbox {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #00ccff;
+}
+body .contai .form .chatbox .show-pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  border: solid 2px #00ccff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .contai .form .chatbox .show-pass .before {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: #333;
+}
+body .contai .form .chatbox .show-pass .donglao {
+  background-color: #00ccff;
+}
+body .contai .form .Submit {
+  outline: none;
+  background: #ff00d0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  float: right;
+  cursor: pointer;
+}
+body .bem {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 60vh;
+  left: 20vh;
+  border-radius: 50%;
+  background-color: white;
+  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+  -webkit-animation: damate 2s linear infinite;
+          animation: damate 2s linear infinite;
+}
+@-webkit-keyframes damate {
+  from {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes damate {
+  from {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+body .bem::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 6px;
+  right: 6px;
+  background: #000;
+  border-radius: 50%;
+  z-index: 10;
+}
+body .bem::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+  border-radius: 50%;
+  z-index: 1;
+  filter: blur(30px);
+}
+body .bem2 {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  right: 300px;
+  top: 100px;
+  border-radius: 50%;
+  background-color: white;
+  background: linear-gradient(45deg, transparent, transparent 50%, #e5f403);
+}
+body .traidat {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  width: 270px;
+  height: 260px;
+}
