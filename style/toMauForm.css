@@ -143,10 +143,13 @@ body .contai .form .Submit {
   margin-top: 30px;
   float: right;
   cursor: pointer;
-  text-decoration: none;
+  
+}
+a.Submit {
+    text-decoration: none;
 }
 body .bem {
-  text-decoration: none;
+  
   position: absolute;
   height: 150px;
   width: 150px;
